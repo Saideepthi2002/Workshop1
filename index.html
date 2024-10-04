@@ -5,19 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-       @media screen and (min-width:300px) and (max-width:1500px) {
+       @media screen and (min-width:0px) and (max-width:1500px) {
         nav{
             height: 01vh;
             width: 99vw;
             display: flex;
             justify-content:space-around;
             color: blueviolet;
-            /* background-color: aqua; */
-            /* background-image: url(./assests/images/workshopimg.jpg); */
             font-weight: bold;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 40px;
-            /* background-size: cover; */
         }
         .home{
             display: flex;
@@ -29,18 +26,19 @@
             
         }
         .navdiv1{
-            /* background-color: aquamarine; */
             height: 20vh;
             display: flex;
             width: 100vw;
             justify-content: space-between;
-            /* line-height: 5; */
             justify-content: space-around;
         }
         .Fuel{
             height: 40vh;
             width: 50vw;
-           color: white;
+            color: white;
+            position: relative;
+            top:30%;
+            left:15%;
         }
         .md{
             height: 100vh;
@@ -74,8 +72,33 @@
             font-size: 25px;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
+            position: relative;
+            left:5%;
         }
-        
+        .inbox:hover{
+
+        }
+        footer{
+            height: 50vh;
+            width: 100vw;
+            background-color:blueviolet;
+            display: flex;
+            /* flex-wrap: wrap; */
+            justify-content: space-around;
+        }
+        .info{
+            border: 1px solid black;
+            height: 40vh;
+            width: 20vw;
+            margin-top:3%;
+        }
+        .links{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color:#fafafa;
+            
+        }
+
         
        }
         
@@ -83,7 +106,7 @@
 </head>
 <body>
     <div class="md">
-    <nav  style="position: sticky; top:5px;">
+    <nav  style="position: sticky; top:5px;z-index: 2;">
         <div class="navdiv1">
         <div class="travel">Travel</div>
         <div class="home">
@@ -93,23 +116,63 @@
         </div>
        </div>       
     </nav>
-    <div class="Fuel"></div>
+    <div class="Fuel">
         <div><h1 style="text-align: start;color: white;font-family: Arial, Helvetica, sans-serif;font-size: 60px;">Fuel Mind Travel</h1></div>
-        <div><p style="color: white;font-size: 30px;">Lorem ipsum dolor, sit amet consec</p></div>
-        <div><button style="height: 7vh; width: 15vw;font-size: 20px;">Lets Go Now</button></div>
+        <div><p style="color: white;font-size: 30px;font-family: Arial, Helvetica, sans-serif;">Lorem ipsum dolor, sit amet consec</p></div>
+        <div><button style="height: 7vh; width: 15vw;font-size: 20px; font-family: Arial, Helvetica, sans-serif;">Lets Go Now</button></div>
     </div>
 </div>
 <!-- part2 -->
  <div class="boxes">
-    <div><h1 style="font-size: 30px;font-family: Arial, Helvetica, sans-serif;color: #2a2a2a; text-align: start;font-weight: bold;">Start your Vacation with lots of Services</h1></div>
+    <div><h1 style="font-size: 30px;font-family: Arial, Helvetica, sans-serif;color: #2a2a2a; text-align: start;font-weight: bold;font-family: Arial, Helvetica, sans-serif;">Start your Vacation with lots of Services</h1></div>
     <div class="maininbox">
-        <div class="inbox"><div><img src="./assests/images/balcony2.webp" height="100%" width="100%"></div><div><span>Ship Cruise</span><br><p>150 Properties</p></div></div>
-        <div class="inbox"><div><img src="./assests/images/balcony2.webp" height="100%" width="100%"></div><div><span>Ship Cruise</span><br><p>150 Properties</p></div></div>
-        <div class="inbox"><div><img src="./assests/images/balcony2.webp" height="100%" width="100%"></div><div><span>Ship Cruise</span><br><p>150 Properties</p></div></div>
-        
-     
+        <div class="inbox"><div><img src="./assests/images/lakshwadeep.webp" height="100%" width="100%"></div><div><div style="text-align: center;position: relative;top:30%;">Ship Cruise</div><br><p style="color: gray;font-size: 15px;text-align: center;">150 Properties</p></div></div>
+        <div class="inbox"><div><img src="./assests/images/balcony2.webp" height="100%" width="100%"></div><div><div style="text-align: center;position: relative;top:30%;">Ship Cruise</div><br><p style="color: gray;font-size: 15px;text-align: center;">150 Properties</p></div></div>
+        <div class="inbox"><div><img src="./assests/images/food.jpg" height="100%" width="100%"></div><div><div style="text-align: center;position: relative;top:30%;">Ship Cruise</div><br><p style="color: gray;font-size: 15px;text-align: center;">150 Properties</p></div></div>
     </div>
  </div>
+ <!-- part3 -->
+  <footer>
+    <div class="info info1">
+       <span style="text-decoration: underline;font-size: 30px;font-family: Arial, Helvetica, sans-serif;font-weight: bold;color: #fafafa;">Quick</span>       <span style="font-size: 30px;font-family: Arial, Helvetica, sans-serif;font-weight: bold;color: white;">links</span>
+       <div class="links">
+        <p>About</p>
+        <p>Terms and Conditions</p>
+        <p>Privacy Policy</p>
+        <p>Help</p>
+        <p>Tour</p>
+       </div>
+    </div>
+    <div class="info info2">
+        <span style="text-decoration: underline;font-size: 30px;font-family: Arial, Helvetica, sans-serif;font-weight: bold;color: #fafafa;">Quick</span>       <span style="font-size: 30px;font-family: Arial, Helvetica, sans-serif;font-weight: bold;color: white;">links</span>
+        <div class="links">
+         <p>About</p>
+         <p>Terms and Conditions</p>
+         <p>Privacy Policy</p>
+         <p>Help</p>
+         <p>Tour</p>
+        </div></div>
+    <div class="info info3">
+        <span style="text-decoration: underline;font-size: 30px;font-family: Arial, Helvetica, sans-serif;font-weight: bold;color: #fafafa;">Quick</span>       <span style="font-size: 30px;font-family: Arial, Helvetica, sans-serif;font-weight: bold;color: white;">links</span>
+        <div class="links">
+         <p>About</p>
+         <p>Terms and Conditions</p>
+         <p>Privacy Policy</p>
+         <p>Help</p>
+         <p>Tour</p>
+        </div></div>
+    <div class="info info4">
+        <span style="text-decoration: underline;font-size: 30px;font-family: Arial, Helvetica, sans-serif;font-weight:bold;color: #fafafa;">Connect</span> 
+        <div class="soicons">
+            <div class="icon icon1"><img src="./assests/images/"></div>
+            <div class="icon icon2"></div>
+            <div class="icon icon3"></div>
+            <div class="icon icon4"></div>
+        </div>
+    </div>
+    
+  </footer>
+  
    
     
     
