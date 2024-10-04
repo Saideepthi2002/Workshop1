@@ -4,8 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+       @media screen and (min-width:300px) and (max-width:1000px) {
+        nav{
+            display: flex;
+            justify-content: space-between;
+            color: blueviolet;
+            background-color: aqua;
+            background-image: url("");
+        }
+        
+       }
+        
+    </style>
 </head>
 <body>
-    
+    <nav style="position: sticky; top:5px;">
+        <div class="travel">Travel</div>
+        <div class="home">
+            <span>Home</span>
+            <span>Services</span>
+            <span>Contact Us!</span>
+        </div>
+
+    </nav>
 </body>
 </html>
