@@ -5,13 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-       @media screen and (min-width:300px) and (max-width:1000px) {
+       @media screen and (min-width:300px) and (max-width:1500px) {
         nav{
+            height: 01vh;
+            width: 99vw;
             display: flex;
-            justify-content: space-between;
+            justify-content:space-around;
             color: blueviolet;
-            background-color: aqua;
-            background-image: url("");
+            /* background-color: aqua; */
+            /* background-image: url(./assests/images/workshopimg.jpg); */
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            /* background-size: cover; */
+        }
+        .home{
+            display: flex;
+            justify-content: space-evenly;
+            gap: 30px;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 2.5;
+            
+        }
+        .navdiv1{
+            /* background-color: aquamarine; */
+            height: 20vh;
+            display: flex;
+            width: 100vw;
+            justify-content: space-between;
+            /* line-height: 5; */
+            justify-content: space-around;
+        }
+        .Fuel{
+            height: 40vh;
+            width: 50vw;
+           color: white;
+        }
+        .md{
+            height: 100vh;
+            width: 100vw;
+            background-image: url(./assests/images/workshopimg.jpg);
+            background-size: cover;
+
+        }
+        .boxes{
+            height: 70vh;
+            width: 100vw;
+        }
+        .maininbox{
+            
+            height: 40vh;
+            width: 90vw;
+            display: flex;
+            justify-content: center;
+            gap:10px;
+
+
+        }
+        .inbox{
+            border: 1px solid black;
+            height: 40vh;
+            width: 25vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 50px;
         }
         
        }
@@ -19,14 +78,36 @@
     </style>
 </head>
 <body>
-    <nav style="position: sticky; top:5px;">
+    <div class="md">
+    <nav  style="position: sticky; top:5px;">
+        <div class="navdiv1">
         <div class="travel">Travel</div>
         <div class="home">
-            <span>Home</span>
-            <span>Services</span>
-            <span>Contact Us!</span>
+            <div>Home</div>
+            <div>Services</div>
+            <div>Contact Us!</div>
         </div>
-
+       </div>       
     </nav>
+    <div class="Fuel"></div>
+        <div><h1 style="text-align: start;color: white;font-family: Arial, Helvetica, sans-serif;font-size: 60px;">Fuel Mind Travel</h1></div>
+        <div><p style="color: white;font-size: 30px;">Lorem ipsum dolor, sit amet consec</p></div>
+        <div><button style="height: 7vh; width: 15vw;font-size: 20px;">Lets Go Now</button></div>
+    </div>
+</div>
+<!-- part2 -->
+ <div class="boxes">
+    <div><h1 style="font-size: 30px;font-family: Arial, Helvetica, sans-serif;color: #2a2a2a; text-align: start;font-weight: bold;">Start your Vacation with lots of Services</h1></div>
+    <div class="maininbox">
+        <div class="inbox"><div><img src="./assests/images/balcony2.webp" height="100%" width="100%"></div><div><span>Ship Cruise</span><br>150 Properties</div></div>
+        <div class="inbox"><div><img src="./assests/images/balcony2.webp" height="100%" width="100%"></div><div><span>Ship Cruise</span><br>150 Properties</div></div>
+        <div class="inbox"><div><img src="./assests/images/balcony2.webp" height="100%" width="100%"></div><div><span>Ship Cruise</span><br>150 Properties</div></div>
+        
+     
+    </div>
+ </div>
+   
+    
+    
 </body>
 </html>
