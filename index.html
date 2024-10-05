@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-       @media screen and (min-width:0px) and (max-width:1500px) {
+       @media screen and (min-width:300px) and (max-width:1500px) {
         nav{
-            height: 01vh;
-            width: 99vw;
+            height: 10vh;
+            width: 100vw;
             display: flex;
             justify-content:space-around;
             color: blueviolet;
@@ -41,7 +41,7 @@
             left:15%;
         }
         .md{
-            height: 100vh;
+            height: 120vh;
             width: 100vw;
             background-image: url(./assests/images/workshopimg.jpg);
             background-size: cover;
@@ -53,16 +53,19 @@
         }
         .maininbox{
             
-            height: 40vh;
+            height: 100vh;
             width: 90vw;
             display: flex;
+            /* flex-wrap: wrap; */
             justify-content: center;
             gap:10px;
+           position: relative;
+           top:5vh;
 
 
         }
         .inbox{
-            border: 1px solid black;
+            border: 1px solid blueviolet;
             height: 40vh;
             width: 25vw;
             display: flex;
@@ -76,18 +79,30 @@
             left:5%;
         }
         .inbox:hover{
+            border: 1px solid red;
+        }
+        .go_button{
+            height: 7vh;
+            width: 15vw;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            color: blueviolet;
 
+        }
+        .go_button:active{
+            color: red;
         }
         footer{
             height: 50vh;
             width: 100vw;
             background-color:blueviolet;
             display: flex;
-            /* flex-wrap: wrap; */
             justify-content: space-around;
+            position: relative;
+            top:10vh;
         }
         .info{
-            border: 1px solid black;
             height: 40vh;
             width: 20vw;
             margin-top:3%;
@@ -97,12 +112,7 @@
             font-size: 20px;
             color:#fafafa;
         }
-        .info4{
-            /* display: flex; */
-            /* justify-content: space-around; */
-        }
         .icon{
-            border: 1px solid black;
             height: 7vh;
             width: 5vw;
             border-radius:15px;
@@ -110,23 +120,14 @@
         .soicons{
             display: flex;
             gap: 10px;
-            /* justify-content: space-around; */
         }
-        .icon2{
-            background-image: url(./assests/images/instagram.png);
-            background-repeat: no-repeat;
-            object-fit:contain;
-
-        }
-
-        
        }
         
     </style>
 </head>
 <body>
     <div class="md">
-    <nav  style="position: sticky; top:5px;z-index: 2;">
+    <nav  style="position: sticky; top:0px;z-index:2; background-color:#fafafa;">
         <div class="navdiv1">
         <div class="travel">Travel</div>
         <div class="home">
@@ -138,8 +139,10 @@
     </nav>
     <div class="Fuel">
         <div><h1 style="text-align: start;color: white;font-family: Arial, Helvetica, sans-serif;font-size: 60px;">Fuel Mind Travel</h1></div>
-        <div><p style="color: white;font-size: 30px;font-family: Arial, Helvetica, sans-serif;">Lorem ipsum dolor, sit amet consec</p></div>
-        <div><button style="height: 7vh; width: 15vw;font-size: 20px; font-family: Arial, Helvetica, sans-serif;">Lets Go Now</button></div>
+        <div><p style="color: white;font-size: 30px;font-family: Arial, Helvetica, sans-serif;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum ad ducimus laudantium ab suscipit sapiente</p></div>
+        <!-- <div><button class="x" style="height: 7vh; width: 15vw;font-size: 20px; font-family: Arial, Helvetica, sans-serif;color: blueviolet;border: #fafafa;border-radius: 3px;">Let's Go Now!</button></div> -->
+         <button class="go_button">Let's Go Now!</button>
+        
     </div>
 </div>
 <!-- part2 -->
@@ -182,14 +185,11 @@
          <p>Tour</p>
         </div></div>
     <div class="info info4">
-        <!-- <div>Connect</div>
-        <div class="icon"></div> -->
         <div><span style="text-decoration: underline;font-size: 30px;font-family: Arial, Helvetica, sans-serif;font-weight:bold;color: #fafafa;">Connect</span></div><br>
         <div class="soicons">
-            <div class="icon icon1"><img src="./assests/images/" height="100%" width="100%"></div>
-            <div class="icon icon2"></div>
-            <div class="icon icon3"></div>
-            <div class="icon icon4"></div>
+            <div class="icon icon1"><img src="./assests/images/instagram2.png" height="50vh" width="50vw"></div>
+            <div class="icon icon3"><img src="./assests/images/facebook2.png" height="50vh" width="50vw"></div>
+            <div class="icon icon4"><img src="./assests/images/Utube2.png" height="50vh" width="50vw"></div>
         </div>
     </div>
     
